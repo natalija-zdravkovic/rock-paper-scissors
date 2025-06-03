@@ -42,3 +42,8 @@ function getHumanCHoice()
 
 let humanChoice = getHumanCHoice()
 console.log(humanChoice)
+
+/*promenljive koje cuvaju score korisnika i kompjutera*/
+
+let humanScore = 0
+let computerScore = 0
