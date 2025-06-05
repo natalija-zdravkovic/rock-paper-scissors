@@ -27,9 +27,6 @@ function getComputerChoice()
     return choice
 }
 
-let computerChoice = getComputerChoice()
-console.log(computerChoice)
-
 /*funckija getHumanChoice koja uzima izbor korisnika i vraca ga
 koiristi prompt metod
 zanemariti slucaj ukoliko korisnik ne unese jedan od tri izbora*/
@@ -40,10 +37,72 @@ function getHumanCHoice()
     return choice
 }
 
-let humanChoice = getHumanCHoice()
-console.log(humanChoice)
-
 /*promenljive koje cuvaju score korisnika i kompjutera*/
 
 let humanScore = 0
 let computerScore = 0
+
+/*funkcija playRound koja kao argumente uzima izbor korisnika i kompjutera,
+nakon odigrane runde, povecava score pobednika i stampa ko je koga pobedio (papir je pobedio kamen i sl.)
+humanChoice parametar je case-insensitive*/
+
+/*korisnik i kompjuter
+papir i papir -> nereseno *
+papir i kamem -> korisnik *
+papir i makaze -> kompjuter *
+kamen i papir -> kompjuter *
+kamen i kamen -> nereseno *
+kamen i makaze -> korisnik *
+makaze i papir -> korisnik *
+makaze i makaze -> nereseno *
+makaze i kamen -> kompjuter *
+*/
+
+function playRound(humanChoice, computerChoice)
+{
+    if (humanChoice.toLowerCase() == computerChoice)
+    {
+        console.log("It's a draw!")
+    }
+
+    else if (humanChoice.toLowerCase() == "paper" && computerChoice == "rock")
+    {
+        console.log("You win! Paper beats Rock")
+        humanScore += 1
+    }
+
+    else if (humanChoice.toLowerCase() == "paper" && computerChoice == "scissors")
+    {
+        console.log("You lose! Scissors beats Paper")
+        computerScore += 1
+    }
+
+    else if (humanChoice.toLowerCase() == "rock" && computerChoice == "paper")
+    {
+        console.log("You lose! Paper beats Rock")
+        computerScore += 1
+    }
+
+    else if (humanChoice.toLowerCase() == "rock" && computerChoice == "scissors")
+    {
+        console.log("You win! Rock beats Scissors")
+        humanScore += 1
+    }
+
+    else if (humanChoice.toLowerCase() == "scissors" && computerChoice == "paper")
+    {
+        console.log("You win! Scissors beats Paper")
+        humanScore += 1
+    }
+
+    else if (humanChoice.toLowerCase() == "scissors" && computerChoice == "rock")
+    {
+        console.log("You lose! Rock beats Scissors")
+        computerScore += 1
+    }
+}
+
+const computerSelection = getComputerChoice()
+const humanSelection = getHumanCHoice()
+
+playRound(humanSelection, computerSelection)
