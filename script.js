@@ -102,7 +102,36 @@ function playRound(humanChoice, computerChoice)
     }
 }
 
-const computerSelection = getComputerChoice()
-const humanSelection = getHumanCHoice()
+/*funkcija playGame pet puta ponavlja rundu i na kraju stampa rezultat korisnika i kompjutera
+i ko je pobedio */
 
-playRound(humanSelection, computerSelection)
+function playGame()
+{
+    for (let i = 0; i < 5; i++)
+    {
+        const computerSelection = getComputerChoice()
+        const humanSelection = getHumanCHoice()
+
+        playRound(humanSelection, computerSelection)
+    }
+
+    console.log("Your score is: " + humanScore)
+    console.log("Computer's score is: " + computerScore)
+    
+    if (humanScore > computerScore)
+    {
+        console.log("You win! Congratulations!")
+    }
+
+    else if (computerScore > humanScore)
+    {
+        console.log("You lose!")
+    }
+
+    else
+    {
+        console.log("It's draw!")
+    }
+}
+
+playGame()
