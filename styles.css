@@ -5,3 +5,37 @@
     background-color: #DDEB9D;
 }
 
+.result {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #36454F;
+}
+
+.score {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    margin: 3rem;
+    border: 10px solid #FAF6E9;
+    border-radius: 5%;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 70px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
