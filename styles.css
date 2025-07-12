@@ -68,7 +68,7 @@ button:hover {
     color: #FAF6E9;
 }
 
-.winner {
+.game {
     display: flex;
     flex-direction: column;
     text-align: center;
