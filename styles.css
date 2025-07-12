@@ -67,3 +67,15 @@ button {
 button:hover {
     color: #FAF6E9;
 }
+
+.winner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #36454F;
+    font-size: 35px;
+}
