@@ -107,7 +107,8 @@ i ko je pobedio */
 
 function playGame()
 {
-    for (let i = 0; i < 5; i++)
+    //for (let i = 0; i < 5; i++)
+    while (true)
     {
         const computerSelection = getComputerChoice()
         const humanSelection = getHumanCHoice()
@@ -134,4 +135,10 @@ function playGame()
     }
 }
 
-playGame()
+//playGame()
+
+const buttons = document.querySelectorAll("button")
+
+buttons.forEach((button) => {
+    button.addEventListener("click", playGame)
+})

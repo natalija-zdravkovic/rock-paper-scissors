@@ -1,0 +1,7 @@
+1. kada se klikne paper, rock ili scissors pokrece se funkcija getHumanChoice
+koja na osnovu izbora vraca papir, kamen ili makaze
+2. pokrece se funkcija getComputerChoice koja random bira
+3. pokrece se funkcija playRound koja umesto reci Test stampa ko je pobedio u rundi
+4. na osnovu toga ko je pobedio u rundi se povecava neciji score
+5. sve se to ponavlja dok neciji score ne bude 5
+6. kada neciji score bude pet dole se stampa ko je pobedio
