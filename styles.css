@@ -9,7 +9,7 @@ body {
 }
 
 .result {
-    margin-top: 6rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -23,8 +23,8 @@ body {
     display: flex;
     width: 25%;
     flex-direction: column;
-    padding: 4rem 2rem;
-    margin: 3rem;
+    padding: 3rem 2rem;
+    margin: 2rem;
     border: 10px solid #CFFFE2;
     border-radius: 10px;
 }
@@ -42,17 +42,17 @@ body {
     font-size: 40px;
 }
 
-.buttons {
+.choice {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
 .button {
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 2rem 5rem 2rem 5rem;
 }
 
-button {
+.choice button {
     width: 150px;
     height: 75px;
     display: inline-block;
@@ -67,7 +67,7 @@ button {
     box-shadow: 0 6px 15px rgba(255, 255, 255, 0.6);
 }
 
-button:hover {
+.choice button:hover {
     color: #F6F6F6;
     box-shadow: none;
 }
@@ -76,10 +76,36 @@ button:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 3rem;
+    padding: 2rem;
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #F6F6F6;
     font-size: 35px;
 }
+
+.play button {
+    width: 350px;
+    height: 90px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 3px solid #F6F6F6;
+    background-color: #A2D5C6;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;  
+    color: #000000;
+    font-size: 30px;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.6);
+    
+}
+
+.play button:hover {
+    color: #F6F6F6;
+    box-shadow: none;
+}
+
+ .play {
+    display: flex;
+    justify-content: center;
+ }

@@ -137,8 +137,6 @@ function playGame()
 
 //playGame()
 
-const buttons = document.querySelectorAll("button")
+const playButton = document.querySelector(".play.button")
 
-buttons.forEach((button) => {
-    button.addEventListener("click", playGame)
-})
+playButton.addEventListener("click", playGame)
